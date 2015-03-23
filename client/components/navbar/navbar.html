@@ -1,44 +1,17 @@
-<nav class="navbar navbar-static">
+<section class="menu-section">
     <div class="container">
-        <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="glyphicon glyphicon-chevron-down"></span>
-        </a>
-        <div class="nav-collapse collase">
-            <ul class="nav navbar-nav" ng-controller="NavbarCtrl">  
-                <li ng-repeat="item in menu">
-                    <a ng-href="{{item.link}}">{{item.title}}</a>
-                </li>
-            </ul>
-      </div>		
-    </div>
-</nav><!-- /.navbar -->
-
-<header class="masthead">
-    <div class="container"> 
         <div class="row">
-            <div class="col col-sm-6">
-                <h1><a>IQF-Wind Project</a></h1>
-                <p class="lead">Innovation und Qualitätsfond</p></h1>
-            </div>
-            <div class="col col-sm-6">
-                <div class="well pull-right">
-                    <img src="assets/images/morgenstelle_topview.jpg" width="400">
+            <div class="col-md-12">
+                <div class="navbar-collapse collapse ">
+                    <ul id="menu-top" class="nav navbar-nav navbar-right" ng-controller="NavbarCtrl">
+                        <li ng-repeat="item in menu">
+                            <a ng-href="{{item.link}}">{{item.title}}</a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
+
         </div>
     </div>
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</section>
