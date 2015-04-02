@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="app/app.css">
       <!-- injector:css -->
       <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/data/data.css">
+      <link rel="stylesheet" href="app/instrumentation/instrumentation.css">
+      <link rel="stylesheet" href="app/location/location.css">
       <link rel="stylesheet" href="app/main/main.css">
       <!-- endinjector -->
     <!-- endbuild -->
@@ -48,7 +51,7 @@
     <div class="navbar navbar-inverse set-radius-zero">
         <div class="container">
             <div class="navbar-header">
-                <h1>IQF-Wind Project</h1>
+                <a ng-href="\"><h1>IQF-Wind Project</h1></a>
                 <p>Innovation und Qualitätsfond</p>
             </div>
         </div>
@@ -88,6 +91,12 @@
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
           <!-- injector:js -->
+          <script src="app/data/data.controller.js"></script>
+          <script src="app/data/data.js"></script>
+          <script src="app/instrumentation/instrumentation.controller.js"></script>
+          <script src="app/instrumentation/instrumentation.js"></script>
+          <script src="app/location/location.controller.js"></script>
+          <script src="app/location/location.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
           <script src="components/navbar/navbar.controller.js"></script>
