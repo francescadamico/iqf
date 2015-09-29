@@ -1,13 +1,54 @@
-<div class="content-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4 class="page-head-line">data</h4>
+<div class='content-wrapper'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <h4 class='page-head-line'>data</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                This is the data view.
+        <div class='col-md-4'>
+            <h4>Wind direction</h4>
+            <div class='btn-group'>
+                <label class='btn btn-default' ng-model='dirModel' btn-radio="'North'">North</label>
+                <label class='btn btn-default' ng-model='dirModel' btn-radio="'South'">South</label>
+                <label class='btn btn-default' ng-model='dirModel' btn-radio="'East'">East</label>
+                <label class='btn btn-default' ng-model='dirModel' btn-radio="'West'">West</label>
+            </div>
+        </div>  
+        
+        <div class='col-md-4'>
+            <h4>Wind speed</h4>
+            <div class='btn-group'>
+                <label class='btn btn-default' ng-model='speedModel' btn-radio='"< 5 m/s"'>< 5 m/s</label>
+                <label class='btn btn-default' ng-model='speedModel' btn-radio='"> 5 m/s"'>> 5 m/s</label>
+            </div>
+        </div> 
+            <br>
+        
+        <div class='col-md-4'>
+            <br>
+            
+            <button type='button' class='btn btn-info' ng-click='enablePlots(dirModel,speedModel)'>Show plots</button>
+        </div>
+            
+        <div ng-switch='showPlots'>
+            <div ng-switch-when=true>
+                <div ng-repeat='iplot in plotItems'>
+                    <div ng-switch='dirModel == iplot.direction'>
+                        <div ng-switch-when='true'>
+                            <div ng-switch='speedModel == iplot.speed'>
+                                <div ng-switch-when='true'> 
+                                    <img ng-src='{{iplot.plot1}}' width=1000> <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class='row'>
+            <div class='col-md-12'>
+                <img src='../../assets/images/stations.jpeg' class='img-responsive'>
             </div>
         </div>
     </div>
