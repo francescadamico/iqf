@@ -8,12 +8,16 @@ angular.module('iqfApp')
             'link': '/location'
         },
         {
-            'title': 'Instrumentation',
+            'title': 'SN\@M',
             'link': '/instrumentation'
         },
         {
-            'title': 'Data',
+            'title': 'SN\@m data',
             'link': '/data'
+        },
+        {
+            'title': 'Simulation',
+            'link': '/simulation'
         }
     ];
 
