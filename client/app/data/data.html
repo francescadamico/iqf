@@ -37,18 +37,25 @@
                         <div ng-switch-when='true'>
                             <div ng-switch='speedModel == iplot.speed'>
                                 <div ng-switch-when='true'> 
-                                    <img ng-src='{{iplot.plot1}}' width=1000> <br>
+                                    <img ng-src='{{iplot.plot1}}' width=500>
+                                    <img ng-src='{{iplot.plot2}}' width=500>
+                                    <img ng-src='{{iplot.plot3}}' width=500>
+                                    <img ng-src='{{iplot.plot4}}' width=500>
+                                    <img ng-src='{{iplot.plot5}}' width=500>
+                                    <img ng-src='../../assets/images/CAD5original.jpg' width=600>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         
-        <div class='row'>
-            <div class='col-md-12'>
-                <img src='../../assets/images/stations.jpeg' class='img-responsive'>
+            <div ng-switch-when=false>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <img src='../../assets/images/stations.jpeg' class='img-responsive'>
+                </div>
+            </div>
             </div>
         </div>
     </div>

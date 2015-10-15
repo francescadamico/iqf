@@ -19,14 +19,14 @@ angular.module('iqfApp')
     $scope.showPlots = false;
     
     $scope.plotItems = [
-        { direction: 'North', speed: '> 5 m/s', plot1: '../../assets/images/windDirection.jpeg'},
-        { direction: 'North', speed: '< 5 m/s', plot1: '../../assets/images/all.jpeg'},
-        { direction: 'South', speed: '> 5 m/s', plot1: '../../assets/images/velocity.jpeg'},
-        { direction: 'South', speed: '< 5 m/s', plot1: '../../assets/images/balcony_station.JPG'},
-        { direction: 'East', speed: '> 5 m/s', plot1: '../../assets/images/garten_station.jpg'},
-        { direction: 'East', speed: '< 5 m/s', plot1: '../../assets/images/hoorzaalzentrum_station.JPG'},
-        { direction: 'West', speed: '> 5 m/s', plot1: '../../assets/images/morgenstelle_topview.jpg'},
-        { direction: 'West', speed: '< 5 m/s', plot1: '../../assets/images/UKT.png'},
+        { direction: 'North', speed: '> 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
+        { direction: 'North', speed: '< 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
+        { direction: 'South', speed: '> 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
+        { direction: 'South', speed: '< 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
+        { direction: 'East', speed: '> 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
+        { direction: 'East', speed: '< 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
+        { direction: 'West', speed: '> 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
+        { direction: 'West', speed: '< 5 m/s', plot1: '../../assets/images/abau.jpg', plot2: '../../assets/images/balcon.jpg', plot3: '../../assets/images/fernh.jpg', plot4: '../../assets/images/hoorz.jpg', plot5: '../../assets/images/mensa.jpg'},
     ];
     
     $scope.$watchCollection('checkModelDir', function () {
